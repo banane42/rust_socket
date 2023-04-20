@@ -27,6 +27,7 @@ fn main() {
                   
                   listening_socket.recv_from(&mut buffer).expect("Could not read into buffer");
 
+                  print!("\r");
                   print!("other: {}", str::from_utf8(&buffer)
                               .expect("Could not write buffer as string"));
             }

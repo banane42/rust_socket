@@ -32,9 +32,6 @@ fn main() {
                         }
                     }
                 }
-
-                // sock.send_to(&buf, &src)
-                //     .expect("Failed to send a response");
             },
             Err(e) => {
                 eprintln!("couldn't recieve a datagram: {}", e);
